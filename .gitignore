@@ -1,0 +1,17 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Data — regenerate by rerunning the notebook
+*.csv
+*.parquet
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
