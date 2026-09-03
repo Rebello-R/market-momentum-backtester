@@ -244,3 +244,39 @@ Or open `backtester.ipynb` directly on GitHub to see the code and
 
 output without running anything.
 
+
+
+\## Notes on this project
+
+
+
+Built as a learning project while working through pandas and
+
+quantitative finance fundamentals. I used an AI assistant as a tutor,
+
+working through the pipeline step by step rather than generating
+
+finished code — the design choices, debugging and interpretation of
+
+results are my own, and I can talk through any part of it.
+
+
+
+Bugs worked through in the process, each of which taught me something
+
+about pandas:
+
+
+
+\- `.shift()` on a boolean DataFrame silently upcasts to `object` dtype,
+
+&#x20; which turns a harmless `0/0` into a `ZeroDivisionError`
+
+\- `.where()` requires a condition matching the frame's full 2D shape;
+
+&#x20; a row-level mask needs `.loc` instead
+
+\- Floating-point representation error causing `value\_counts()` to show
+
+&#x20; two separate rows that both display as `1.0`
+
